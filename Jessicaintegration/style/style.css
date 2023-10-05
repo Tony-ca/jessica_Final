@@ -1,0 +1,2038 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+
+  background-color: rgb(255, 255, 255);
+}
+.encoche {
+  height: 10px;
+  background-color: #346077;
+  display: none;
+  
+}
+
+
+/* style navabr */
+#qui,#suisje,#contact,#real{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  
+ }
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 25px;
+}
+.menu {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: 210px;
+  background-color: #346077;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-inline: auto;
+  list-style: none;
+}
+ul li {
+  margin: 75px;
+}
+ul li:hover {
+  animation: navbarhover forwards 0s 3s;
+}
+ul li {
+  position: relative;
+}
+ul li::after {
+  content: "";
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.1em;
+  background: #ffffff;
+  z-index: 0;
+  opacity: 1;
+  transition: transform 1.5s;
+}
+ul li:hover::after {
+  transform: scaleX(1);
+}
+header{
+  height: 70px;
+}
+ul li {
+  text-decoration: none;
+  background: linear-gradient(
+      to top,
+      rgb(255, 255, 255) 0%,
+      rgba(255, 255, 255) 10%,
+      transparent 10.01%
+    )
+    no-repeat left bottom / 0 100%;
+  transition: background-size 1.5s;
+}
+
+ul li:hover {
+  background-size: 100% 100%;
+}
+.menu .logo {
+  height: 205px;
+}
+.menu .logo2 {
+  display: none;
+ 
+}
+/* style navabr */
+
+/* dropdown menu */
+.menu .toggle_btn {
+  margin-top: 15px;
+  margin-right: 10px;
+  color: aliceblue;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.dropdown_menu {
+  
+  display: none;
+  position: absolute;
+  right: 2rem;
+  height: 0;
+  top: 60px;
+  width: 300px;
+  background: #346077e2;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  position: fixed;
+  border: 1px solid white;
+  z-index: 10;
+  height: 250px;
+  margin-top: 5px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown_menu li:hover {
+  color: brown;
+}
+/* dropdown menu */
+
+/* qui suis je */
+.H1 {
+  display: flex;
+  justify-content: center;
+  
+}
+.H1 h1 {
+  margin-top: 950px;
+  font-size: 90px;
+  font-family: "Mistress Benedict Brush";
+  margin: 0;
+}
+.H3 {
+  display: flex;
+  justify-content: center;
+}
+.H3 h3 {
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-style: italic;
+  margin-top: 10px;
+}
+.titreQuiSuisJe {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+.container {
+ 
+  padding-left: 80px;
+  padding-right: 80px;
+  
+}
+.wor {
+  display: flex;
+  margin: 15px;
+}
+.imgheader {
+  margin-right: 25px;
+  flex: 4;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+.imgheader .image img {
+  height: 25vh;
+  width: 75vw;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.image {
+  display: flex;
+}
+
+/* mes engagement */
+.TitreEngagement,
+.PharseAccrocheEngagment {
+  text-align: center;
+  margin-top: 10px;
+  
+}
+.mesengagements {
+  margin-top: 50px;
+}
+
+.containerEngagement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardEngagement {
+  padding: 50px;
+  border: hidden;
+  overflow: hidden;
+  width: 480px;
+  box-shadow: hidden;
+}
+
+.cardEngagement img {
+  max-width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.cardContenue {
+  padding: 16px;
+}
+
+.cardContenue h2 {
+  font-family: "Kaushan Script", cursive;
+  margin-top: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.cardContenue p {
+  font-family: "PlayFair";
+  margin-bottom: 0;
+  color: #062e41;
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Kaushan Script", cursive;
+  src: url(../font/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: "PlayFair";
+  src: url(../font/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+.TitreEngagement {
+  font-family: "Kaushan Script", cursive;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.PharseAccrocheEngagment {
+  font-family: "PlayFair";
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.imageGarantie {
+  max-width: 100px !important;
+  height: 70px !important;
+}
+
+.imageCertif {
+  max-width: 75px !important;
+  height: 80px !important;
+}
+
+.TitreEngagement,
+.PharseAccrocheEngagment {
+  text-align: center;
+}
+
+.containerEngagement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardEngagement {
+  border: hidden;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: hidden;
+}
+
+.cardEngagement img {
+  max-width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.cardContenue {
+  padding: 16px;
+}
+
+.cardContenue h2 {
+  font-family: "Kaushan Script", cursive;
+  margin-top: 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+.cardContenue p {
+  font-family: "PlayFair";
+  margin-bottom: 0;
+  color: #062e41;
+  text-align: center;
+  font-size: 15px;
+}
+
+@font-face {
+  font-family: "Kaushan Script", cursive;
+  src: url(../font/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: "PlayFair";
+  src: url(../font/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+.TitreEngagement {
+  font-family: "Kaushan Script", cursive;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.PharseAccrocheEngagment {
+  font-family: "PlayFair";
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.imageGarantie {
+  max-width: 100px !important;
+  height: 70px !important;
+}
+
+.imageCertif {
+  max-width: 75px !important;
+  height: 80px !important;
+}
+/* mes engagements */
+
+/* fournisseurs */
+.nosfournisseurs {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.fournisseur,
+.textefournisseur {
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Kaushan Script", cursive;
+  src: url(fonts/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: "PlayFair";
+  src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+.fournisseur {
+  font-family: "Kaushan Script", cursive;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.textefournisseur {
+  font-family: "PlayFair";
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.containerImg {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Tollens {
+  width: 300px;
+  height: 50px;
+  margin-top: 40px;
+  
+}
+.Tollenss {
+  width: 170px;
+  height: 150px;
+
+}
+.Seigneurie {
+  width: 300px;
+  height: 150px;
+}
+
+.Semin {
+  width: 300px;
+  height: 150px;
+}
+
+.Valspar {
+  width: 300px;
+  height: 200px;
+}
+/* fournisseurs */
+
+
+/* contact */
+.contact {
+  margin-top: 50px;
+}
+.section_formtitre {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.color_Fond {
+  background: linear-gradient(#346077, #ffffff);
+  height: 600px;
+}
+
+.Formulaire_info {
+  margin-left: 15%;
+  font-size: 24px;
+}
+
+.formaulaire_btn {
+  width: 566.8px;
+  border-radius: 10px;
+  border-color: #ffffff;
+  margin-bottom: 20px;
+  margin-left: 15%;
+  height: 39.06px;
+}
+
+.commentaire {
+  background-color: #ffffff;
+  height: 228.21px;
+  width: 686.41px;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.condition {
+  display: flex;
+  align-items: center;
+}
+
+.conditiondiv {
+  width: 611px;
+  display: flex;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.condition {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.envoyer {
+  width: 676.07px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  height: 60px;
+  font-size: 32px;
+  background-color: #346077;
+  color: #ffffff;
+  font-family: "Kaushan Script";
+}
+
+.messages {
+  font-size: 24px;
+  margin-top: -15px;
+}
+/* contact */
+
+
+/* footer */
+.footerr {
+  margin-top: 150px;
+}
+.reseau {
+  display: flex;
+  justify-content: center;
+  font-family: "Kaushan Script", cursive;
+  margin-bottom: 30px;
+}
+.reseau p {
+  font-size: 25px;
+}
+
+div.logo {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.logo a img {
+  height: 37px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+div.footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 150px;
+  background-color: #346077;
+}
+div.footer img {
+  margin-left: 10px;
+  height: 150px;
+}
+
+div.footer div p {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: #ffff;
+  margin-bottom: 5px;
+}
+div.footer div {
+  margin-top: 25px;
+  margin-left: 80px;
+}
+div.footer div {
+  margin-top: 10px;
+}
+div.footer div p {
+  font-size: 15px;
+}
+div.footer {
+  height: 100px;
+}
+div.footer img {
+  height: 100px;
+}
+/* footer */
+
+
+/* section realisations */
+
+.RealisationContainer{
+  width: 100%;
+  background-color: #346077;
+  padding: 30px;
+  background-image: url('../img/img_legere.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.h2Realisation{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+  color: white;
+  font-size: 48px;
+  font-family: 'Kaushan Script', cursive;
+}
+.h2RealisationTab{
+  display: none;
+  justify-content: center;
+  margin-bottom: 90px;
+  color: white;
+  font-size: 48px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.displayRealisation{
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.titre_realisation{
+  /* width: 40%; */
+  font-family: 'Playfair Display', serif;
+}
+.block_vide{
+  height: 150px;
+  width: 500px;
+  margin-left: 80px;
+}
+.h3Realisation{
+  position: absolute;
+  height: 150px;
+  width: 500px;
+  font-size: 55px;
+  color: white;
+  transition: opacity 0.7s ease;
+}
+.h3Realisation1,
+.h3Realisation2{
+  position: absolute;
+  height: 150px;
+  width: 500px;
+  font-size: 55px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+.h3Realisation3,
+.h3Realisation4{
+  position: absolute;
+  height: 150px;
+  width: 500px;
+  font-size: 50px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+.color_rea_h3{
+  color: #C2A775;
+}
+.sousTitre1,
+.sousTitre2,
+.sousTitre3,
+.sousTitre4{
+  cursor: pointer;
+  margin-left: 80px;
+  margin-top: 70px;
+  font-size: 24px;
+  color: white;
+}
+.sousTitreTab1,
+.sousTitreTab2,
+.sousTitreTab3,
+.sousTitreTab4{
+  display: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+.meilleurImage{
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 20/16;
+  width: 600px;
+  border-radius: 25px;
+}
+.bestImg{
+  position: absolute;
+  width: 100%;
+  transition: opacity 1s ease;
+}
+.best1Img{
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.best2Img{
+  position: absolute;
+  width: 740px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.best3Img{
+  position: absolute;
+  top: -150px;
+  width: 700px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.best4Img{
+  top: -150px;
+  position: absolute;
+  width: 950px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+#modal_pos1,
+#modal_pos2,
+#modal_pos3,
+#modal_pos4 {
+  display: none;
+  background-color: #476D80;
+  color: white;
+  transition: background-color 1.2s, color 1.2s;
+}
+#modal_pos1:hover,
+#modal_pos2:hover,
+#modal_pos3:hover,
+#modal_pos4:hover {
+  background-color: #234050;
+
+}
+.AvantApres{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-family: 'Kaushan Script', cursive;
+}
+.AvantApres_solo{
+  margin-inline: 20%;
+}
+.AvantApres_soloTab1,
+.AvantApres_soloTab2{
+  display: none;
+}
+.containerImgCarousel{
+  display: flex;
+  justify-content: center;    
+}
+.imgAvant,
+.imgApres{
+  margin-inline: 10px;
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
+}
+.img1{
+  border-radius: 25px;
+  height: 500px;
+  width: 500px;
+}
+.description{
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+}
+.FlecheTab{
+  display: none;
+}
+.tracePeintureTab{
+  display: none;
+}
+.test_phone{
+  display: none;
+}
+/* section realisations */
+
+
+/* devis */
+.modd{
+  color:white ;
+}
+.mod{
+  border: 0;
+  background: linear-gradient(#346077, #ffffff);
+}
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ 
+}
+label {
+  font-size: 18px;
+  font-weight: 400;
+}
+.description {
+  height: 150px;
+}
+.formulaire p{
+  color: #ffffff;
+  margin-bottom: 70px;
+  font-size: 25px;
+}
+input {
+  width: 270px;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+}
+button.btn1{
+  z-index: 11;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+  border-radius: 10px;
+  height: 35px;
+  width: 100px;
+  color: #ffffff;
+  position: fixed;
+  margin-top: -55px;
+  margin-left: 10px;
+  background-color: #346077;
+  border-color: white;
+}
+button.btn1:hover{
+  background-color: #346077;
+  border-color: #ffffff;
+}
+
+.tracePeinturePc{
+  width: 15%;
+}
+/* devis */
+
+
+
+/* responsive navbar */
+@media (max-width: 1300px) {
+  .dropdown_menu.open {
+    margin-top: 25px;
+  }
+  .encoche {
+    display: block;
+    position: fixed;
+    margin: 0;
+  }
+  ul li {
+    display: none;
+  }
+
+  .menu {
+    height: 60px;
+  }
+  .menu form {
+    height: 40px;
+  }
+
+  .menu .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+    right: 0.5rem;
+  }
+  .menu .logo2 {
+    display: block;
+    
+    margin-left: 35px;
+    height: 65px;
+  }
+  .menu .logo {
+    display: none;
+  }
+}
+/* responsive navbar */
+
+/* responsive realisation */
+@media screen and (max-width: 820px) {
+  .displayRealisation{
+    flex-wrap: wrap;
+  }
+  .RealisationContainer{
+      padding: 0;
+      padding-block: 20px;
+  }
+  .h2Realisation{
+      display: none;
+      
+  }
+  .h2RealisationTab{
+      margin-bottom: 30px;
+      font-size: 48px;
+      display: flex;
+  }
+  .titre_realisation{
+    width: 100%;
+  }
+  .block_vide{
+     position: relative;
+      height: 140px;
+      margin-left: 0px;
+  }
+  .h3Realisation,
+  .h3Realisation1,
+  .h3Realisation2,
+  .h3Realisation3,
+  .h3Realisation4{
+      margin-inline: 12% ;
+      position: absolute;
+      height: 120px;
+      width: 658px;
+      font-size: 40px;
+      text-align: center;
+  }
+  .sousTitre1,
+  .sousTitre2,
+  .sousTitre3,
+  .sousTitre4{
+      display: none;
+  }
+  .tracePeintureTab{
+      display: flex;
+      position: absolute;
+      height: 120px;
+      width: 99%;
+      left: 10px;
+  }
+  .sousTitreTab1,
+  .sousTitreTab2,
+  .sousTitreTab3,
+  .sousTitreTab4{
+    margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      margin-inline: 12px;
+      color: #346077;
+      z-index: 1;
+  }
+  .tracePeinturePc{
+      display: none;
+  }
+  .test{
+    position: relative;
+    justify-content: center;
+      display: flex;
+      width: 100%;
+  }
+  .FlecheTab{
+      display: flex;
+      justify-content: center;
+      font-size: 40px;
+      color: white;
+      margin-bottom: 60px;
+  }
+  .meilleurImage{
+      height: 450px;
+      width: 600px;
+  }
+  .bestImg{
+      position: absolute;
+      width: 600px;
+      transition: opacity 1s ease;
+  }
+  .best1Img{
+      position: absolute;
+      width: 650px;
+      opacity: 0;
+      transition: opacity 1s ease;
+  }
+  .best2Img{
+      position: absolute;
+      width: 640px;
+      opacity: 0;
+      transition: opacity 1s ease;
+  }
+  .best3Img{
+      position: absolute;
+      top: -150px;
+      width: 600px;
+      opacity: 0;
+      transition: opacity 1s ease;
+  }
+  .best4Img{
+      top: -150px;
+      position: absolute;
+      width: 850px;
+      opacity: 0;
+      transition: opacity 1s ease;
+  }
+  .containerImgCarousel{
+      flex-direction:column;
+      justify-content: center; 
+      align-items: center; 
+      margin-top: 30px;  
+  }
+  .imgAvant,
+  .imgApres{
+    margin-inline: 10px;
+    overflow: hidden;
+    height: 390px;
+    width: 390px;
+  }
+  .img1{
+    border-radius: 25px;
+    height: 390px;
+    width: 390px;
+  }
+  .AvantApres_solo{
+      display: none;
+  }
+  .imgAvant,
+  .imgApres{
+  margin-top: 60px;
+  height: 100%;
+  width: 100%;
+  }
+  .AvantApres_soloTab1{
+      display: block;
+      position: absolute;
+      top: 75px;
+  }
+  .AvantApres_soloTab2{
+      display: block;
+      position: absolute;
+      top: 510px;
+  }
+}
+@media screen and (max-width: 480px) {
+  
+  .displayRealisation{
+    flex-wrap: wrap;
+  }
+  
+  .h2RealisationTab{
+      margin-bottom: 30px;
+      font-size: 38px;
+      display: flex;
+  }
+  .block_vide{
+      height: 110px;
+      width: 300px;
+  }
+  .h3Realisation,
+  .h3Realisation1,
+  .h3Realisation2,
+  .h3Realisation3,
+  .h3Realisation4{
+      height: 120px;
+      width: 300px;
+      font-size: 28px;
+      text-align: center;
+  }
+  .titre_realisation{
+      justify-content: center;
+      align-items: center;
+  }
+  .test{
+      display: none;
+  }
+  .tracePeintureTab{
+   
+      display: none;
+  }
+  .FlecheTab{
+      display: none;
+  }
+  .bestImg,
+  .best1Img,
+  .best2Img,
+  .best3Img,
+  .best4Img{
+      display: none;
+  }
+  .test_phone{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: white;
+  }
+  .sousTitreTel1,
+  .sousTitreTel2,
+  .sousTitreTel3,
+  .sousTitreTel4{
+      cursor: pointer;
+      margin-bottom: 0;
+  }
+  .meilleurImage{
+      height: auto;
+      width: 400px;
+  }
+  .best1ImgTel,
+  .best2ImgTel,
+  .best3ImgTel,
+  .best4ImgTel{
+      display: none;
+      height: 350px;
+      width: 95%;
+      margin-bottom: 40px;
+      border-radius: 25px;
+      transition: opacity 1s ease;
+  }
+  #modal_pos1 {
+      position: absolute;
+      height: 30px;
+      width: 60%;
+      top: 380px;
+      font-size: 12px;
+  }
+  #modal_pos2{
+      position: absolute;
+      height: 30px;
+      width: 60%;
+      top: 450px;
+      font-size: 12px;
+  }
+  #modal_pos3{
+      position: absolute;
+      height: 30px;
+      width: 60%;
+      top: 510px;
+      font-size: 12px;
+  }
+  #modal_pos4{
+      position: absolute;
+      height: 30px;
+      width: 60%;
+      top: 580px;
+      font-size: 12px;
+  }
+  .containerImgCarousel{
+      margin-top: 80px;
+  }
+  .AvantApres_soloTab1{
+      display: block;
+      position: absolute;
+      top: 130px;
+  }
+  .AvantApres_soloTab2{
+      display: block;
+      position: absolute;
+      top: 540px;
+  }
+  .img1{
+      border-radius: 25px;
+      height: 350px;
+      width: 90%;
+  }
+}
+/* responsive realisation */
+
+/* responsive mobile */
+@media (min-width: 300px) and (max-width: 600px) {
+  #qui{
+    top: 0px;
+   }
+   #suisje{
+    top:120px;
+   }
+   #contact{
+    top: 4455px;
+   }
+   #real{
+    top: 740px;
+   }
+  button.btn1{
+    left: 0;
+    margin-top:0 ;
+  }
+  .H1{
+    margin-top: 0;
+  }
+  .motDevis {
+    font-weight: bold;
+    background-color: #346077;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+  .menu{
+    position: fixed;
+  }
+  .dropdown_menu {
+    right: 1rem;
+    left: 1rem;
+    width: unset;
+    position: fixed;
+  }
+  div.footer div {
+    margin-top: 8px;
+    margin-left: 10px;
+  }
+  div.footer div p {
+    font-size: 8px;
+  }
+  div.footer {
+    height: 75px;
+  }
+  div.footer img {
+    margin-top: 5px;
+    height: 50px;
+  }
+
+  .containerEngagement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .TitreEngagement,
+  .PharseAccrocheEngagment {
+    text-align: center;
+  }
+
+  .cardEngagementd {
+    border: hidden;
+    overflow: hidden;
+    width: auto;
+    box-shadow: hidden;
+  }
+
+  .cardEngagement img {
+    display: block;
+    margin: 0 auto;
+    max-width: 60px;
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  .cardContenue {
+    padding: 16px;
+  }
+
+  .cardContenue h2 {
+    font-family: "Kaushan Script", cursive;
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+    max-width: 200px;
+  }
+
+  .cardContenue p {
+    font-family: "PlayFair";
+    margin-bottom: 0;
+    color: #062e41;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  @font-face {
+    font-family: "Kaushan Script", cursive;
+    src: url(../font/KaushanScript-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: "PlayFair";
+    src: url(../font/PlayfairDisplay-VariableFont_wght.ttf);
+  }
+
+  .TitreEngagement {
+    font-family: "Kaushan Script", cursive;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .PharseAccrocheEngagment {
+    font-family: "PlayFair";
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .imageGarantie {
+    max-width: 100px !important;
+    height: 70px !important;
+  }
+
+  .imageCertif {
+    max-width: 75px !important;
+    height: 80px !important;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fournisseur,
+  .textefournisseur {
+    text-align: center;
+  }
+
+  @font-face {
+    font-family: "Kaushan Script", cursive;
+    src: url(fonts/KaushanScript-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: "PlayFair";
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+  }
+
+  .fournisseur {
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .textefournisseur {
+    font-family: "PlayFair";
+    font-size: 15px;
+    font-weight: 300;
+    width: 350px;
+    margin-left: 27px;
+  }
+
+  .containerImg {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .Tollens {
+    width: 70px;
+    height: 20px;
+    margin-top: 10px;
+  }
+
+  .Seigneurie {
+    width: 90px;
+    height: 50px;
+  }
+
+  .Semin {
+    width: 70px;
+    height: 40px;
+    margin-top: 2px;
+  }
+
+  .Valspar {
+    width: 80px;
+    height: 60px;
+  }
+  .H1 h1 {
+    font-size: 40px;
+  }
+  .wor {
+    display: block;
+  }
+
+  .titreQuiSuisJe {
+    margin-left: 0;
+    text-align: center;
+    font-size: 25px;
+  }
+  .texteheader {
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+  }
+  .boutonDevis {
+    font-size: 10px;
+    width: 100px;
+    height: 40px;
+    right: 0;
+    top: 50px;
+  }
+  .image {
+    border-radius: 100px;
+    height: 200px;
+  }
+  .H3 h3 {
+    font-size: 17px;
+  }
+
+  .container {
+    position: static;
+    padding: 0;
+  }
+}
+/* responsive mobile */
+
+/* responsive tablette */
+@media (min-width: 600px) and (max-width: 900px) {
+  .texte-qui{
+    margin-left: 22%;
+  }
+ 
+  #qui{
+    top: 0px;
+   }
+   #suisje{
+    top:120px;
+   }
+   #contact{
+    top: 4450px;
+   }
+   #real{
+    top: 610px;
+   }
+  input.checkbox{
+    margin-top: 20px;
+    width: 20px;
+  }
+  div.footer div{
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 5px;
+  }
+  .envoyer{
+    font-size: 25px;
+  }
+  .Formulaire_info{
+    margin: 0;
+  }
+  .formaulaire_btn{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .section_formtitre{
+    font-size: 20px;
+  }
+  .Valspar{
+    margin-top: 15px;
+    height: 55px;
+    width: 120px;
+  }
+  .Semin{
+    width:70px ;
+    height: 45px;
+    margin-top: 20px;
+  }
+  .Seigneurie{
+    width: 120px;
+    height: 85px;
+    margin-top: 7px;
+  }
+  .Tollens{
+    width: 50px;
+    height: 25px;
+  }
+  .containerImg{
+    margin-top: 30px;
+  }
+  .textefournisseur{
+    margin-top: 20px;
+  }
+  .PharseAccrocheEngagment{
+    font-size: 15px;
+  }
+  .TitreEngagement{
+    font-size: 25px;
+  }
+  .texteheader{
+    
+    width: 80%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .imgheader .image img{
+    height: 20vh;
+    width: 50vw;
+  }
+  .titreQuiSuisJe{
+    font-size: 25px;
+  }
+  .H1 h1{
+    font-size:50px;
+  }
+  .H3 h3{
+    font-size: 20px;
+
+  }
+  .wor{
+    display: block;
+  }
+
+  .texteheader {
+    text-align: center;
+  }
+  .boutonDevis {
+    font-size: 22px;
+    width: 200px;
+    height: 80px;
+    right: 0;
+    top: -30px;
+  }
+  .titreQuiSuisJe {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+/* responsive tablette */
+
+/* responsive pc */
+@media (min-width: 900px) and (max-width: 1920px) {
+  #qui{
+    top: 0px;
+   }
+   #suisje{
+    top:150px;
+   }
+   #contact{
+    top: 4180px;
+   }
+   #real{
+    top: 800px;
+   }
+  
+  .reseau{
+    margin-bottom: 15px;
+  }
+  div.logo a img{
+    height: 70px;
+  }
+
+  header{
+    height: 280px;
+  }
+  div.footer div p{
+    margin-top: 0;
+   
+  }
+  div.footer div{
+    margin-top:15px;
+    width: 700px;
+  }
+  .containerEngagement{
+    max-width: 1700px;
+  }
+  .imgheader .image img{
+    padding: 0;
+    height: 50vh;
+    width: 45vw;
+  }
+  .texteheader{
+    line-height: 53px;
+    font-size: 30px;
+
+  }
+  .titreQuiSuisJe{
+    margin-left: 72%;
+  }
+  .TitreEngagement{
+    font-size: 35px;
+  }
+  .PharseAccrocheEngagment{
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  .cardEngagement{
+    width: 500px;
+    
+  
+  }
+  
+  .cardContenue p{
+    font-size: 20px;
+  }
+
+.textefournisseur{
+  font-size: 25px;
+}
+
+}
+/* responsive pc */
+
+
+
+
+
+
+
+@media screen and (min-width: 500px) and (max-width: 1500px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .color_Fond {
+    height: 800px;
+  }
+
+  .form_commentaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .formaulaire_btn {
+    height: 29.93px;
+    width: 500.37px;
+  }
+
+  .Formulaire_info {
+    font-size: 16px;
+  }
+
+  .condition {
+    font-size: 13px;
+  }
+
+  .envoyer {
+    height: 43.98px;
+    width: 367.26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .commentaire {
+    display: flex;
+    justify-content: center;
+
+    height: 216.74px;
+    width: 500.25px;
+  }
+
+  .messages {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .condition {
+    font-size: 13px;
+    height: 57px;
+    width: 358px;
+  }
+
+  .conditiondiv {
+    display: flex;
+    justify-content: center;
+  }
+  .section_formtitre {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 499px) {
+  .reseau p{
+    font-size: 20px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  .color_Fond {
+    height: 800px;
+    width: 100%;
+  }
+
+  .form_commentaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 6px;
+  }
+  .formaulaire_btn {
+    height: 19px;
+    width: 249.08px;
+  }
+
+  .Formulaire_info {
+    font-size: 16px;
+  }
+
+  .condition {
+    font-size: 13px;
+  }
+
+  .envoyer {
+    height: 28px;
+    width: 263.22px;
+
+    font-size: 15px;
+  }
+
+  .commentaire {
+    display: flex;
+    justify-content: center;
+    height: 185px;
+    width: 249.08px;
+  }
+
+  .messages {
+    font-size: 15px;
+  }
+
+  .condition {
+    font-size: 10px;
+    height: 57px;
+    width: 240px;
+  }
+
+  .conditiondiv {
+    display: flex;
+    justify-content: center;
+    width: 354px;
+  }
+
+  .section_formtitre {
+    font-size: 12px;
+  }
+
+  .checkbox {
+    margin-top: 30px;
+    width: 13.05px;
+    height: 12px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1500px) {
+  .fournisseur,
+  .textefournisseur {
+    text-align: center;
+  }
+
+  @font-face {
+    font-family: "Kaushan Script", cursive;
+    src: url(fonts/KaushanScript-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: "PlayFair";
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+  }
+
+  .fournisseur {
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .textefournisseur {
+    font-family: "PlayFair";
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .containerImg {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 100px;
+  }
+
+  .Tollens {
+    width: 130px;
+    height: 50px;
+    margin-top: 30px;
+  }
+
+  .Seigneurie {
+    width: 250px;
+    height: 150px;
+    margin-top: -10px;
+  }
+
+  .Semin {
+    width: 130px;
+    height: 100px;
+  }
+
+  .Valspar {
+    width: 180px;
+    height: 150px;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 2100px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+.carouselmod {
+  display: none;
+}
+
+  .four_cards_of_pc {
+    background-image: url('../img/img_legere.png');
+    background-color: #346077;
+    position: relative;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  @font-face {
+    font-family: 'PlayFair';
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf)
+  }
+
+  .four_cards_container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .four_cards_card {
+    border: hidden;
+    border-radius: hidden;
+    height: 600px;
+    width: 320px;
+    box-shadow: hidden;
+    position: relative;
+    z-index: 2;
+    margin-top: 70px;
+  }
+
+  .four_cards_card img {
+    display: block;
+    margin: 0 auto;
+    width: 270px;
+    height: 400px;
+    margin-top: 20px;
+    border: 2px solid #C2A775;
+    border-radius: 40px;
+    padding: 13px;
+  }
+
+  .four_cards_p {
+    font-family: 'PlayFair';
+    color: #ffff;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+
+.four_cards_of_tab{
+  display: none;
+}
+
+}
+
+@media (min-width: 600px) and (max-width: 1500px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .carouselmod {
+    display: none;
+  }
+
+  .four_cards_of_tab {
+    background-image: url('../img/img_legere.png');
+    background-color: #346077;
+    position: relative;
+    height: auto;
+    position: relative;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+  }
+
+  @font-face {
+    font-family: 'PlayFair';
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf)
+  }
+
+  .four_cards_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .four_cards_card {
+    border: hidden;
+    border-radius: hidden;
+    height: 420px;
+    width: 320px;
+    box-shadow: hidden;
+    position: relative;
+    z-index: 2;
+    margin-top: 70px;
+  }
+
+  .four_cards_card img{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 300px;
+    margin-top: 20px;
+    border: 2px solid #C2A775;
+    border-radius: 40px;
+    padding: 13px;
+  }
+
+
+  .four_cards_p {
+    font-family: 'PlayFair';
+    color: #ffff;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .description{
+    height: 50px;
+  }
+
+
+.carouselmod {
+  display: block;
+  z-index: 2;
+}
+
+.four_cards_card {
+  display: none;
+}
+
+.four_cards_of_tab{
+  display: none;
+}
+
+.four_cards_of_pc{
+  display: none;
+}
+
+.contour_img{
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+  height: 430px;
+  overflow: hidden;
+  border: 2px solid #C2A775;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.img_mob {
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+  height: 90%;
+  border-radius: 40px;
+}
+
+.container-carousel {
+  background-image: url('../img/img_legere.png');
+  background-color: #346077;
+  position: relative;
+  height: auto;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  
+
+}
+
+.description{
+  font-family: 'PlayFair';
+  color: #ffff;
+  text-align: center;
+  font-size: 21px;
+  margin-top: 20px;
+}
+
+}
+
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .imgAvant,
+  .imgApres{
+    margin-inline: 10px;
+    overflow: hidden;
+    height: 330px;
+    width: 330px;
+  }
+  .img1{
+    border-radius: 25px;
+    height: 330px;
+    width: 330px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 990px) {
+  .imgAvant,
+  .imgApres{
+    margin-inline: 10px;
+    overflow: hidden;
+    height: 210px;
+    width: 210px;
+  }
+  .img1{
+    border-radius: 25px;
+    height: 210px;
+    width: 210px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
